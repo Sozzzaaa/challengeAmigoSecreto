@@ -6,6 +6,7 @@ let amigos = [];
 const listaHTML = document.getElementById("listaAmigos");
 const resultado = document.getElementById("resultado");
 const inputNewAmigo = document.getElementById("amigo");
+const botonAgregar = document.getElementById("botonAgregar");
 
 function limpiarHTML(elementoID)
 {
@@ -70,3 +71,10 @@ function agregarAmigo()
     }
 
 }
+
+inputNewAmigo.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();   // stop default behavior
+      botonAgregar.click();           // simulate button click
+    }
+  });
