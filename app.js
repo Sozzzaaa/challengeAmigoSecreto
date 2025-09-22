@@ -71,10 +71,11 @@ function agregarAmigo()
     }
 
 }
-
+//esto permite que al presionar Enter, se envia simula presionar el boton de Agregar
 inputNewAmigo.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       event.preventDefault();   // stop default behavior
       botonAgregar.click();           // simulate button click
     }
+
   });
