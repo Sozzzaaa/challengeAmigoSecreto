@@ -74,7 +74,7 @@ function agregarAmigo()
 
 inputNewAmigo.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-      event.preventDefault();   // stop default behavior
+      //event.preventDefault();   // stop default behavior
       botonAgregar.click();           // simulate button click
     }
   });
